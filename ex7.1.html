@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>excercise 7</title>
+  </head>
+  <body>
+   
+  </body>
+  <script>
+    function greet(name){
+      if(!name){
+        console.log('hi there');
+      }
+      else{
+      console.log(`hello ${name}`);
+    }
+  }
+
+  function convertToFahrenheit(celsius){
+    return(celsius*9/5)+32;
+  }
+  function convertTocelsius(Fahrenheit){
+    return(Fahrenheit-32)*5/9;
+  }
+  function convertTemperature(degrees,unit)
+      {
+        if(unit==='C')
+        {
+          const Fahrenheit= (degrees * 9/5)+32;
+          console.log(Fahrenheit+'F');
+
+        }
+        else
+        {
+          const celsius=(degrees-32)*(5/9);
+          console.log(celsius+'C');
+
+        }
+      }
+  convertTemperature(25, 'C');
+  convertTemperature(86, 'F');
+  console.log(convertToFahrenheit(30));
+  console.log(convertToFahrenheit(25));
+    greet('');
+  </script>
+</html>
